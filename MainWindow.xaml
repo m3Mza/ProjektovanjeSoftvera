@@ -1,0 +1,21 @@
+﻿<Window x:Class="NarucivanjeHrane.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NarucivanjeHrane"
+        mc:Ignorable="d"
+        Title="Zolt" Height="500" Width="900" Background="White">
+    <Grid Background="Orange">
+        <Label x:Name="lblNaslov" Content="ZOLT" HorizontalAlignment="Left" Height="74" Margin="398,31,0,0" VerticalAlignment="Top" Width="263" FontFamily="Cooper Black" Foreground="#FF132A84" FontSize="36" FontWeight="Bold" Cursor=""/>
+        <Image x:Name="Dostavljac" HorizontalAlignment="Left" Height="275" Margin="565,99,0,0" VerticalAlignment="Top" Width="282" Stretch="UniformToFill" Source="/dostavljac.png" Visibility="Visible"></Image>
+        <Button x:Name="BtnRadnja" Content="Restorani" HorizontalAlignment="Left" Height="67" Margin="49,99,0,0" VerticalAlignment="Top" Width="189" Background="#FF833815" FontSize="20" Foreground="White" FontWeight="Bold" Click="BtnRadnja_Click" Cursor="Hand" BorderBrush="Black"/>
+        <Button x:Name="BtnHrana" Content="Hrana" HorizontalAlignment="Left" Height="67" Margin="49,203,0,0" VerticalAlignment="Top" Width="189" Background="#FF833815" FontSize="20" Foreground="White" FontWeight="Bold" Click="BtnHrana_Click" Cursor="Hand" BorderBrush="Black"/>
+        <Button x:Name="BtnRadnik" Content="Radnik" HorizontalAlignment="Left" Height="67" Margin="49,307,0,0" VerticalAlignment="Top" Width="189" Background="#FF833815" FontSize="20" Foreground="White" FontWeight="Bold" Click="BtnRadnik_Click"  Cursor="Hand" BorderBrush="Black"/>
+        <Button x:Name="BtnPice" Content="Pice" HorizontalAlignment="Left" Height="68" Margin="333,132,0,0" VerticalAlignment="Top" Width="189" Background="#FF833815" FontSize="20" Foreground="White" FontWeight="Bold" Click="BtnPice_Click" Cursor="Hand" BorderBrush="Black"/>
+        <Button x:Name="BtnProdaja" Content="Prodaja" HorizontalAlignment="Left" Height="67" Margin="333,265,0,0" VerticalAlignment="Top" Width="189" Background="#FF833815" FontSize="20" Foreground="White" FontWeight="Bold" Click="BtnProdaja_Click" Cursor="Hand" BorderBrush="Black"/>
+        <Button Name="CloseButton" Content="Izađi" HorizontalAlignment="Left" Height="38" Margin="721,10,0,0" VerticalAlignment="Top" Width="150" Background="#FFCF0000" FontSize="20" Foreground="White" FontWeight="Bold" Click="CloseButton_Click" Cursor="Hand" BorderBrush="Black"/>
+
+
+    </Grid>
+</Window>

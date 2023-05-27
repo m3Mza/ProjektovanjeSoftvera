@@ -1,0 +1,32 @@
+﻿<Window x:Class="NarucivanjeHrane.Pice"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NarucivanjeHrane"
+        mc:Ignorable="d"
+        Title="Piće" Height="600" Width="900">
+    <Grid>
+        <StackPanel HorizontalAlignment="Left" Height="50" Margin="6,534,0,0" VerticalAlignment="Top" Width="894" Background="LightSeaGreen"/>
+        <Image x:Name="pice" HorizontalAlignment="Right" VerticalAlignment="Top" Height="536" Width="522" Stretch="UniformToFill" Source="/pice.png" Visibility="Visible" Margin="0,-20,-11,0"/>
+        <StackPanel HorizontalAlignment="Left" Height="584" VerticalAlignment="Center" Width="389" Background="LightSeaGreen">
+            <StackPanel Height="50" Margin="0,0,-0.2,0" Background="LightSeaGreen">
+                <Button x:Name="BtnNazadD" Content="Nazad" HorizontalAlignment="Left" Height="50" Width="131" Click="BtnNazadR_Click" Background="Black" Foreground="White" FontSize="18" FontWeight="Bold" Cursor="Hand"/>
+            </StackPanel>
+        </StackPanel>
+        <Label x:Name="PiceID" Content="Pice ID" Margin="10,117,731.6,398.4" FontSize="20" FontWeight="Bold" Foreground="White"/>
+        <Label x:Name="Naziv" Content="Naziv" Margin="10,177,770.6,333.4" FontSize="20" FontWeight="Bold" Foreground="White"/>
+        <Label x:Name="ML" Content="Kolicina u ml" Margin="10,242,757,267" FontSize="20" FontWeight="Bold" Foreground="White"/>
+        <Label x:Name="Cena" Content="Cena" Margin="10,308,770.6,199.4" FontSize="20" FontWeight="Bold" Foreground="White"/>
+        <TextBox x:Name="TxtboxPiceID" HorizontalAlignment="Left" Margin="162,117,0,419.4" TextWrapping="Wrap" Text="" Width="205"/>
+        <TextBox x:Name="TxtboxNaziv" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" Width="203" Margin="164,177,0,355.4"/>
+        <TextBox x:Name="TxtboxML" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" Width="203" Margin="164,242,0,290.4"/>
+        <TextBox x:Name="TxtboxCena" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" Width="203" Margin="162,308,0,224.4"/>
+        <DataGrid x:Name="GridPice" HorizontalAlignment="Left" Height="320" Margin="419,101,0,0" VerticalAlignment="Top" Width="456" Opacity="0.8" Grid.ColumnSpan="2"/>
+        <Button x:Name="BtnDodajPice" Content="Dodaj" HorizontalAlignment="Left" Width="117" Click="BtnDodajPice_Click" Background="#FF833815" Foreground="White" FontSize="18" FontWeight="Bold" Margin="0,465,0,50.4"/>
+        <Button x:Name="BtnIzmeniPice" Content="Izmeni" HorizontalAlignment="Left" Width="117" Click="BtnIzmeniPice_Click" Background="#FF833815" Foreground="White" FontSize="18" FontWeight="Bold" Margin="137,465,0,50.4"/>
+        <Button x:Name="BtnObrisiPice" Content="Obriši" HorizontalAlignment="Left" Width="117" Click="BtnObrisiPice_Click" Background="#FF833815" Foreground="White" FontSize="18" FontWeight="Bold" Margin="272,465,0,50.4"/>
+        <Button x:Name="BtnObrisiTextPice" Content="Obriši Text" HorizontalAlignment="Left" Width="131" Click="BtnObrisiText_Click" Background="Black" Foreground="White" FontSize="18" FontWeight="Bold" Cursor="Hand" Margin="258,0,0,513"/>
+
+    </Grid>
+</Window>

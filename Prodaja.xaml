@@ -1,0 +1,32 @@
+﻿<Window x:Class="NarucivanjeHrane.Prodaja"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NarucivanjeHrane"
+        mc:Ignorable="d"
+        Title="Prodaja" Height="600" Width="900">
+    <Grid>
+        <StackPanel HorizontalAlignment="Left" Height="45" Margin="10,539,0,0" VerticalAlignment="Top" Width="894" Background="DarkOliveGreen"/>
+        <Image x:Name="pare" HorizontalAlignment="Right" VerticalAlignment="Top" Height="542" Width="580" Stretch="UniformToFill" Source="/pare.png" Visibility="Visible" Margin="0,-41,-38,0"/>
+        <StackPanel HorizontalAlignment="Left" Height="584" VerticalAlignment="Center" Width="390" Background="DarkOliveGreen">
+            <StackPanel Height="50" Margin="0,0,0.4,0" Background="DarkOliveGreen">
+                <Button x:Name="BtnNazadP" Content="Nazad" HorizontalAlignment="Left" Height="50" Width="131" Click="BtnNazadR_Click" Background="Black" Foreground="White" FontSize="18" FontWeight="Bold" Cursor="Hand"/>
+            </StackPanel>
+        </StackPanel>
+        <Label x:Name="ProdajaIDTxt" Content="ProdajaID" Margin="10,108,772.6,421.4" Background="{x:Null}" Foreground="White" FontSize="20" FontWeight="Bold"/>
+        <Label x:Name="DatumTxt" Content="Datum" Margin="10,155,773,374" Background="{x:Null}" Foreground="White" FontSize="20" FontWeight="Bold"/>
+        <Label x:Name="HranaID" Content="Hrana ID" Margin="10,200,742,329" Background="{x:Null}" Foreground="White" FontSize="20" FontWeight="Bold"/>
+        <Label x:Name="PiceID" Content="Pice ID" Margin="10,255,742,274" Background="{x:Null}" Foreground="White" FontSize="20" FontWeight="Bold"/>
+        <TextBox x:Name="TxtboxProdajaID" TextWrapping="Wrap" Text="" Margin="139,108,535.6,432.4"/>
+        <TextBox x:Name="TxtboxHranaID" TextWrapping="Wrap" Text="" Margin="139,200,535.6,340.4"/>
+        <TextBox x:Name="TxtboxPiceID" TextWrapping="Wrap" Text="" Margin="136,260,539,279"/>
+        <DataGrid x:Name="GridProdaja" HorizontalAlignment="Left" Height="320" Margin="419,101,0,0" VerticalAlignment="Top" Width="456" Opacity="0.8" Grid.ColumnSpan="2"/>
+        <Button x:Name="BtnDodajP" Content="Dodaj" HorizontalAlignment="Left" Width="117" Click="BtnDodajP_Click" Background="#FF833815" Foreground="White" FontSize="18" FontWeight="Bold" Margin="0,470,0,45.4"/>
+        <Button x:Name="BtnIzmeniP" Content="Izmeni" HorizontalAlignment="Left" Width="117" Click="BtnIzmeniP_Click" Background="#FF833815" Foreground="White" FontSize="18" FontWeight="Bold" Margin="135,470,0,45.4"/>
+        <Button x:Name="BtnObrisiP" Content="Obriši" HorizontalAlignment="Left" Width="117" Click="BtnObrisiP_Click" Background="#FF833815" Foreground="White" FontSize="18" FontWeight="Bold" Margin="273,470,0,45.4"/>
+        <Button x:Name="BtnObrisiTextP" Content="Obriši Text" HorizontalAlignment="Left" Width="131" Click="BtnObrisiTextP_Click" Background="Black" Foreground="White" FontSize="18" FontWeight="Bold" Cursor="Hand" Margin="259,-1,0,512"/>
+        <DatePicker x:Name="DatePicker" HorizontalAlignment="Left" Margin="139,155,0,375.4" Width="219" FirstDayOfWeek="Monday" DisplayDate="2021-06-10"/>
+
+    </Grid>
+</Window>
